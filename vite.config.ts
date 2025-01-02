@@ -4,14 +4,42 @@ import { defineConfig } from 'vite';
 import analog from '@analogjs/platform';
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+export default defineConfig(({mode}) => ({
   build: {
     target: ['es2020'],
   },
   resolve: {
     mainFields: ['module'],
   },
-  plugins: [analog({ vite: { experimental: { supportAnalogFormat: true } } })],
+  plugins: [
+    analog({
+      vite: {experimental: {supportAnalogFormat: true}},
+      content: {
+        highlighter: 'shiki',
+        shikiOptions: {
+          highlight: {
+            theme: 'one-dark-pro',
+          },
+          highlighter: {
+            langs: [
+              'json',
+              'ts',
+              'tsx',
+              'js',
+              'jsx',
+              'html',
+              'css',
+              'scss',
+              'less',
+              'angular-html',
+              'angular-ts',
+            ],
+            themes: ['one-dark-pro', 'github-dark', 'github-light'],
+          },
+        },
+      },
+    }),
+  ],
   test: {
     globals: true,
     environment: 'jsdom',
