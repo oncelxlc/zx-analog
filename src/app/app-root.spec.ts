@@ -3,6 +3,7 @@ import { provideRouter } from '@angular/router';
 import { provideLocationMocks } from '@angular/common/testing';
 
 import App from './app-root.ag';
+import { beforeEach, describe, expect, it } from 'vitest';
 
 describe('App', () => {
   beforeEach(async () => {
