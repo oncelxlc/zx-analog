@@ -77,7 +77,10 @@ importers:
         version: 1.11.0(x576ovwmpv26v2jjsdmm46roum)
       '@analogjs/vitest-angular':
         specifier: ^1.11.0
-        version: 1.11.0(@analogjs/vite-plugin-angular@1.11.0(x576ovwmpv26v2jjsdmm46roum))(vitest@2.1.8(@types/node@22.10.3)(jsdom@22.1.0)(less@4.2.0)(sass@1.80.7)(stylus@0.64.0)(terser@5.37.0))
+        version: 1.11.0(@analogjs/vite-plugin-angular@1.11.0(x576ovwmpv26v2jjsdmm46roum))(@angular-devkit/architect@0.1900.6(chokidar@4.0.3))(vitest@2.1.8(@types/node@22.10.3)(jsdom@22.1.0)(less@4.2.0)(sass@1.80.7)(stylus@0.64.0)(terser@5.37.0))
+      '@angular-devkit/architect':
+        specifier: ^0.1900.6
+        version: 0.1900.6(chokidar@4.0.3)
       '@angular-devkit/build-angular':
         specifier: ^19.0.6
         version: 19.0.6(@angular/compiler-cli@19.0.5(@angular/compiler@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0)))(typescript@5.5.4))(@angular/compiler@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0)))(@angular/platform-server@19.0.5(@angular/animations@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0)))(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/compiler@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0)))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(@angular/platform-browser@19.0.5(@angular/animations@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0)))(@angular/common@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0))))(@rspack/core@1.1.8(@swc/helpers@0.5.15))(@types/node@22.10.3)(chokidar@4.0.3)(stylus@0.64.0)(typescript@5.5.4)(vite@5.4.11(@types/node@22.10.3)(less@4.2.0)(sass@1.80.7)(stylus@0.64.0)(terser@5.37.0))
@@ -90,6 +93,9 @@ importers:
       '@angular/compiler-cli':
         specifier: ^19.0.5
         version: 19.0.5(@angular/compiler@19.0.5(@angular/core@19.0.5(rxjs@7.8.1)(zone.js@0.15.0)))(typescript@5.5.4)
+      h3:
+        specifier: ^1.13.0
+        version: 1.13.0
       jsdom:
         specifier: ^22.1.0
         version: 22.1.0
@@ -7435,9 +7441,10 @@ snapshots:
       - uploadthing
       - xml2js
 
-  '@analogjs/vitest-angular@1.11.0(@analogjs/vite-plugin-angular@1.11.0(x576ovwmpv26v2jjsdmm46roum))(vitest@2.1.8(@types/node@22.10.3)(jsdom@22.1.0)(less@4.2.0)(sass@1.80.7)(stylus@0.64.0)(terser@5.37.0))':
+  '@analogjs/vitest-angular@1.11.0(@analogjs/vite-plugin-angular@1.11.0(x576ovwmpv26v2jjsdmm46roum))(@angular-devkit/architect@0.1900.6(chokidar@4.0.3))(vitest@2.1.8(@types/node@22.10.3)(jsdom@22.1.0)(less@4.2.0)(sass@1.80.7)(stylus@0.64.0)(terser@5.37.0))':
     dependencies:
       '@analogjs/vite-plugin-angular': 1.11.0(x576ovwmpv26v2jjsdmm46roum)
+      '@angular-devkit/architect': 0.1900.6(chokidar@4.0.3)
       vitest: 2.1.8(@types/node@22.10.3)(jsdom@22.1.0)(less@4.2.0)(sass@1.80.7)(stylus@0.64.0)(terser@5.37.0)
 
   '@angular-devkit/architect@0.1900.6(chokidar@4.0.3)':
